@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimspect - Perusahaan Ai Terbaik</title>
+</head>
+    <!-- CSS external -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- main header -->
+    <header class="bg-white shadow">
+        
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- logo  -->
+            <div><img src="\img\logo perusahaan.png" alt="Kimspect Logo" class="w-[75px] h-[75px] rounded-full object-cover">
+            </div>
+         
+            <!-- navigation menu -->
+            <nav>
+                <ul class="flex space-x-10">
+                    <li><a href="#home" class="text-gray-600 hover:text-gray-800">Home</a></li>
+                    <li><a href="#profile" class="text-gray-600 hover:text-gray-800">Our Profile</a></li>
+                    <li><a href="#message-us" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+                </ul>
+            </nav>
+
+            
+        </div>
+    </header>
+
+    <hr>
+    <!-- main content -->
+     <main>
+        <!-- Home Section -->
+        <section id="home" class="min-h-[85vh] bg-[url('/img/backgroundHome.png')] bg-opacity-30 bg-cover bg-center flex flex-col justify-center items-center gap-[20px]">
+            <h1 class="text-[36px] font-bold text-[#C49D9D]">Hi! <span id="welcome-text"></span> Welcome to Kimspect</h1>
+            <p class="text-[18px] text-white">Innovating the Future with Artificial Intelligence and Internet of Things.</p>
+        </section>
+
+        <hr>
+
+        <!-- Profile Section -->
+        <section id="profile" class="min-h-[85vh] flex flex-col justify-center items-center gap-[20px] bg-gradient-to-r from-black to-purple-900 h-screen">
+            <h2 class="text-[30px] font-bold text-white">Profile</h2>
+            <p class="text-[18px] text-center p-[100px] text-white">Kimspect adalah perusahaan teknologi inovatif yang fokus pada pengembangan solusi Artificial Intelligence (AI) dan Internet of Things (IoT). Kami hadir untuk menjawab tantangan industri 4.0 dengan menghadirkan sistem cerdas yang dapat membantu perusahaan meningkatkan efisiensi, keamanan, dan produktivitas.
+
+Kimspect menggabungkan AI berbasis machine learning dengan perangkat IoT untuk menciptakan ekosistem digital yang saling terhubung, mulai dari smart home, smart factory, hingga smart city.</p>
+        </section>
+
+        <hr>
+
+        <!-- visi dan misi Section -->
+        <section id="portfolio" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px] bg-gradient-to-r from-purple-900 to-black h-screen">
+            <h2 class="text-[30px] font-bold text-white">Visi dan Misi</h2>
+            <p class="text-[18px] text-center p-[100px] text-white">Visi Kimspect adalah menjadi pemimpin dalam solusi AI dan IoT yang inovatif, memberikan nilai tambah bagi pelanggan dan masyarakat. Misi kami adalah menghadirkan teknologi cerdas yang dapat diakses dan bermanfaat bagi semua orang.</p>
+        </section>
+
+        <hr>
+
+      <!-- Message Us Section -->
+<section id="contact" class="min-h-[70vh] bg-gray-100 flex flex-col items-center justify-center p-10">
+  <h2 class="text-[28px] font-bold mb-6">Message Us</h2>
+  
+  <form id="message-form" class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+    <!-- Name -->
+    <div class="mb-4">
+      <label for="name" class="block mb-2 font-medium">Your Name:</label>
+      <input type="text" id="name" class="border w-full p-2 rounded" required>
+    </div>
+
+    <!-- Email -->
+    <div class="mb-4">
+      <label for="email" class="block mb-2 font-medium">Your Email:</label>
+      <input type="email" id="email" class="border w-full p-2 rounded" required>
+    </div>
+
+    <!-- Message -->
+    <div class="mb-4">
+      <label for="message" class="block mb-2 font-medium">Message:</label>
+      <textarea id="message" class="border w-full p-2 rounded" rows="4" required></textarea>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      Send Message
+    </button>
+  </form>
+
+  <!-- Output result -->
+  <div id="result" class="mt-6 p-4 bg-green-100 text-green-700 rounded hidden"></div>
+</section>
+    </main>
+<script src="/js/script.js"></script>
+</body>
+</html>
